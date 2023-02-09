@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-routing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=4001 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
+},
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "nuxt": "<2.9",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {}
+}
