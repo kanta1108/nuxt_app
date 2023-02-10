@@ -10,3 +10,8 @@ export default {
   name: 'IndexPage'
 }
 </script>
+<style>
+body{
+  font-family: 'Kameron', serif;
+}
+</style>
