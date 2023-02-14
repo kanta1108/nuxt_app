@@ -1,0 +1,33 @@
+AND wp_posts.post_type = 'post'
+AND wp_postmeta.meta_key != 'howto_value'
+AND (
+    1 = 1
+    AND (
+        (
+            wp_posts.post_title LIKE '%卵%'
+            OR wp_postmeta.meta_value LIKE '%卵%'
+        )
+        AND (wp_posts.post_type = 'post')
+        AND wp_postmeta.meta_key != 'howto_value'
+        OR (
+            wp_posts.post_title LIKE '%玉子%'
+            OR wp_postmeta.meta_value LIKE '%玉子%'
+        )
+        OR (
+            wp_posts.post_title LIKE '%タマゴ%'
+            OR wp_postmeta.meta_value LIKE '%タマゴ%'
+        )
+        OR (
+            wp_posts.post_title LIKE '%たまご%'
+            OR wp_postmeta.meta_value LIKE '%たまご%'
+        )
+        OR (
+            wp_posts.post_title LIKE '%卵%'
+            OR wp_postmeta.meta_value LIKE '%卵%'
+        )
+    )
+    ORDER BY
+)
+AND $ wpdb -> posts.post_type = 'post'
+AND $ wpdb -> postmeta.meta_key != 'howto_value'
+AND (1 = 1 " . $noiseSearch . $queryString . ")
